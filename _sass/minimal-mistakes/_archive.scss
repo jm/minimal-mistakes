@@ -64,6 +64,11 @@
   }
 }
 
+.archive__item-title:first-child {
+  margin-top: 0em;
+  padding-top: 0em;
+}
+
 /* remove border*/
 .page__content {
   .archive__item-title {
