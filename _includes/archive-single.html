@@ -21,9 +21,9 @@
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% elsif post.quote %}
-        <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }} <i class="fas fa-quote-right" aria-hidden="true" title="permalink"></i></a>
+        <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-quote-right" aria-hidden="true"></i></a>
       {% elsif post.chat %}
-        <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }} <i class="fas fa-comments" aria-hidden="true" title="permalink"></i></a>
+        <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-comments" aria-hidden="true"></i></a>
       {% else %}
         <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
